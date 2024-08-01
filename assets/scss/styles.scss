@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import "config";
+@import "cards";
+@import "buttons";
+@import "navbar";
+
+// div {
+//     border: 1px solid red;
+// }
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $base-background;
+}
+
+main, .contact-form {
+    background-color: $alternative-background;
+}
+
+header {
+    .container {
+        background-color: $light-color;
+    }
+}
+
+// slider
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap;
+
+    .logos-slide {
+        display: inline-block;
+        animation: 15s slide infinite linear;
+
+        svg {
+            height: 50px;
+            margin: 0 40px;
+        }
+    }
+}
+
+.tech-skills-info {
+    border-left: 5px solid $secondary-color;
+    background-color: rgba($secondary-color, 0.7);
+    padding: 20px;
+}
+
+.my-projects {
+    h2 {
+        color: $secondary-color;
+    }
+
+    .first-card {
+        border-radius: 1.5rem;
+        max-height: 550px;
+        overflow: hidden;
+
+        position: relative;
+        bottom: -15%;
+    }
+}
+
+.contact-form {
+    h2 {
+        color: $secondary-color;
+    }
+}
+
+@media (min-width: 992px) {
+    .img-responsive-lg {
+        max-width: none;
+        height: auto;
+        width: 600px;
+    }
+
+    .my-projects {
+        .first-card {
+            border-top-right-radius: 0rem;
+            border-bottom-right-radius: 0rem;
+        }
+        .second-card {
+            border-top-right-radius: 1.5rem;
+        }
+        .third-card {
+            border-bottom-right-radius: 1.5rem;
+        }
+    }
+}
