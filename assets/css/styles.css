@@ -7,7 +7,7 @@ body {
 
 h1 {
   font-weight: 700;
-  font-size: clamp(2rem, 1.5rem + 2vw, 3rem);
+  font-size: clamp(1.5rem, 1rem + 2vw, 4rem);
   background-image: linear-gradient(#14243B, #E63946);
   color: transparent;
   -webkit-background-clip: text;
@@ -16,17 +16,17 @@ h1 {
 
 h2 {
   font-weight: 500;
-  font-size: clamp(1.25rem, 1rem + 1vw, 2rem);
+  font-size: clamp(1rem, 0.75rem + 1.25vw, 2.25rem);
 }
 
 p {
   font-weight: 400;
-  font-size: clamp(1rem, 0.875rem + 1vw, 1.25rem);
+  font-size: clamp(0.875rem, 0.75rem + 1vw, 1.375rem);
 }
 
 a {
   font-weight: 500;
-  font-size: clamp(1.125rem, 1rem + 1.1vw, 1.375rem);
+  font-size: clamp(0.875rem, 0.75rem + 1vw, 1.375rem);
   text-decoration: none;
   transition: all 0.3s ease;
   color: #E63946;
@@ -40,7 +40,7 @@ a:active {
 
 span {
   font-weight: 400;
-  font-size: clamp(1rem, 0.875rem + 1vw, 1.25rem);
+  font-size: clamp(0.875rem, 0.75rem + 1vw, 1.375rem);
 }
 
 .professional-card {
@@ -79,6 +79,11 @@ span {
   text-transform: uppercase;
   border-radius: 0.8rem;
   transition: all 0.3s ease;
+}
+@media (min-width: 768px) {
+  .btn {
+    padding: 10px 20px;
+  }
 }
 .btn.btn-primary {
   background-color: #14243B;
