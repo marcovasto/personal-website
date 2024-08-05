@@ -19,7 +19,7 @@ h2 {
   font-size: clamp(1rem, 0.75rem + 1.25vw, 2.25rem);
 }
 
-p {
+p, li {
   font-weight: 400;
   font-size: clamp(0.875rem, 0.75rem + 1vw, 1.375rem);
 }
@@ -210,4 +210,13 @@ header .container {
   .my-projects .third-card {
     border-bottom-right-radius: 1.5rem;
   }
+}
+.work-cv .row {
+  color: #FFFFFF;
+  background: rgba(20, 36, 59, 0.8);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
