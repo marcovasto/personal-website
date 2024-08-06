@@ -34,13 +34,13 @@
 
         &:hover,
         &:focus {
-            background-color: darken($secondary-color, 10%);
-            border-color: darken($secondary-color, 10%);
+            background-color: lighten($secondary-color, 10%);
+            border-color: lighten($secondary-color, 10%);
         }
 
         &:active {
-            background-color: darken($secondary-color, 20%);
-            border-color: darken($secondary-color, 20%);
+            background-color: lighten($secondary-color, 20%);
+            border-color: lighten($secondary-color, 20%);
         }
     }
 }
