@@ -1,15 +1,10 @@
-.professional-card {
-    border-radius: 1.5rem;
-    overflow: hidden;
-}
-
 .professional-image {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 175px;
+    min-height: 180px;
 
-    background-color: rgba($primary-color, 0.7);
+    background-color: rgba($primary-color, 0.8);
     background-blend-mode: multiply;
 }
 
@@ -27,4 +22,14 @@
 
 .card-text {
     background-color: $light-color;
+
+    @media (min-width: 992px) {
+        h2 {
+            font-size: 1.5rem;
+        }
+    
+        p {
+            font-size: 1rem;
+        }
+    }
 }

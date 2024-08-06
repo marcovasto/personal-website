@@ -48,17 +48,12 @@ span {
   font-size: clamp(0.88rem, 0.75rem + 1vw, 1.4rem);
 }
 
-.professional-card {
-  border-radius: 1.5rem;
-  overflow: hidden;
-}
-
 .professional-image {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 175px;
-  background-color: rgba(20, 36, 59, 0.7);
+  min-height: 180px;
+  background-color: rgba(20, 36, 59, 0.8);
   background-blend-mode: multiply;
 }
 
@@ -76,6 +71,14 @@ span {
 
 .card-text {
   background-color: #FFFFFF;
+}
+@media (min-width: 992px) {
+  .card-text h2 {
+    font-size: 1.5rem;
+  }
+  .card-text p {
+    font-size: 1rem;
+  }
 }
 
 .btn {
