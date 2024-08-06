@@ -4,6 +4,8 @@
 @import "buttons";
 @import "navbar";
 
+// general
+
 html {
     scroll-behavior: smooth;
 }
@@ -18,17 +20,25 @@ body {
     background-color: $base-background;
 }
 
-main, .contact-form {
+main {
     background-color: $alternative-background;
 }
 
-header {
-    .container {
-        background-color: $light-color;
+// hero section
+
+.home-hero {
+    background-color: $light-color;
+}
+
+@media (min-width: 992px) {
+    .img-responsive-lg {
+        max-width: none;
+        height: auto;
+        width: 600px;
     }
 }
 
-// slider
+// about section
 
 @keyframes slide {
     from {
@@ -41,12 +51,21 @@ header {
 
 .logos {
     overflow: hidden;
-    padding: 60px 0;
+    padding: 40px 0;
     white-space: nowrap;
 
     .logos-slide {
         display: inline-block;
-        animation: 15s slide infinite linear;
+        animation: 15s slide infinite linear;  
+    }
+
+    svg {
+        height: 40px;
+        margin: 0 30px;
+    }
+
+    @media (min-width: 992px) {
+        padding: 60px 0;
 
         svg {
             height: 50px;
@@ -55,42 +74,22 @@ header {
     }
 }
 
-.tech-skills-info {
-    border-left: 5px solid $secondary-color;
-    background-color: rgba($secondary-color, 0.7);
-    padding: 20px;
-}
 
-.my-projects {
-    h2 {
-        color: $secondary-color;
-    }
 
-    .first-card {
-        border-radius: 1.5rem;
-        max-height: 550px;
-        overflow: hidden;
+// portfolio
 
-        position: relative;
-        bottom: -15%;
-    }
-}
+.project {
+    border-radius: 1.5rem;
+    max-height: 550px;
+    overflow: hidden;
 
-.contact-form {
-    h2 {
-        color: $secondary-color;
-    }
+    position: relative;
+    bottom: -15%;
 }
 
 @media (min-width: 992px) {
-    .img-responsive-lg {
-        max-width: none;
-        height: auto;
-        width: 600px;
-    }
-
-    .my-projects {
-        .first-card {
+    .portfolio {
+        .project {
             border-top-right-radius: 0rem;
             border-bottom-right-radius: 0rem;
         }
@@ -101,4 +100,10 @@ header {
             border-bottom-right-radius: 1.5rem;
         }
     }
+}
+
+// contact form
+
+.contact-form {
+    background-color: $alternative-background;
 }

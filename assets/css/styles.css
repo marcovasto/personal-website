@@ -16,31 +16,36 @@ h1 {
 
 h2 {
   font-weight: 500;
-  font-size: clamp(1rem, 0.75rem + 1.25vw, 2.25rem);
+  font-size: clamp(1rem, 0.88rem + 1.5vw, 2rem);
 }
 
-p, li {
+p {
   font-weight: 400;
-  font-size: clamp(0.875rem, 0.75rem + 1vw, 1.375rem);
+  font-size: clamp(0.88rem, 0.75rem + 1vw, 1.4rem);
 }
 
 a {
   font-weight: 500;
-  font-size: clamp(0.875rem, 0.75rem + 1vw, 1.375rem);
+  font-size: clamp(0.88rem, 0.75rem + 1vw, 1.4rem);
   text-decoration: none;
   transition: all 0.3s ease;
   color: #46A148;
 }
 a:hover, a:focus {
-  color: #377d38;
+  color: #60ba62;
 }
 a:active {
-  color: #275a28;
+  color: #84c985;
+}
+
+li {
+  font-weight: 400;
+  font-size: clamp(0.8rem, 0.7rem + 0.95vw, 1.3rem);
 }
 
 span {
   font-weight: 400;
-  font-size: clamp(0.875rem, 0.75rem + 1vw, 1.375rem);
+  font-size: clamp(0.88rem, 0.75rem + 1vw, 1.4rem);
 }
 
 .professional-card {
@@ -143,14 +148,21 @@ body {
   background-color: #F4F4F9;
 }
 
-main, .contact-form {
+main {
   background-color: #E8EAF6;
 }
 
-header .container {
+.home-hero {
   background-color: #FFFFFF;
 }
 
+@media (min-width: 992px) {
+  .img-responsive-lg {
+    max-width: none;
+    height: auto;
+    width: 600px;
+  }
+}
 @keyframes slide {
   from {
     transform: translateX(0);
@@ -161,28 +173,28 @@ header .container {
 }
 .logos {
   overflow: hidden;
-  padding: 60px 0;
+  padding: 40px 0;
   white-space: nowrap;
 }
 .logos .logos-slide {
   display: inline-block;
   animation: 15s slide infinite linear;
 }
-.logos .logos-slide svg {
-  height: 50px;
-  margin: 0 40px;
+.logos svg {
+  height: 40px;
+  margin: 0 30px;
+}
+@media (min-width: 992px) {
+  .logos {
+    padding: 60px 0;
+  }
+  .logos svg {
+    height: 50px;
+    margin: 0 40px;
+  }
 }
 
-.tech-skills-info {
-  border-left: 5px solid #46A148;
-  background-color: rgba(70, 161, 72, 0.7);
-  padding: 20px;
-}
-
-.my-projects h2 {
-  color: #46A148;
-}
-.my-projects .first-card {
+.project {
   border-radius: 1.5rem;
   max-height: 550px;
   overflow: hidden;
@@ -190,24 +202,18 @@ header .container {
   bottom: -15%;
 }
 
-.contact-form h2 {
-  color: #46A148;
-}
-
 @media (min-width: 992px) {
-  .img-responsive-lg {
-    max-width: none;
-    height: auto;
-    width: 600px;
-  }
-  .my-projects .first-card {
+  .portfolio .project {
     border-top-right-radius: 0rem;
     border-bottom-right-radius: 0rem;
   }
-  .my-projects .second-card {
+  .portfolio .second-card {
     border-top-right-radius: 1.5rem;
   }
-  .my-projects .third-card {
+  .portfolio .third-card {
     border-bottom-right-radius: 1.5rem;
   }
+}
+.contact-form {
+  background-color: #E8EAF6;
 }
