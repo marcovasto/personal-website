@@ -16,17 +16,15 @@ $font-medium: 500;
 $font-bold: 700;
 
 // font-size variables
-$font-size-base: 1rem;
 $font-size-h1: clamp(1.5rem, 1rem + 2vw, 4rem);
-$font-size-h2: clamp(1rem, 0.88rem + 1.5vw, 2rem);
-//$font-size-h2: clamp(1rem, 0.75rem + 1.25vw, 2.25rem);
-$font-size-p: clamp(0.88rem, 0.75rem + 1vw, 1.4rem);
-$font-size-a: clamp(0.88rem, 0.75rem + 1vw, 1.4rem);
-$font-size-li: clamp(0.8rem, 0.70rem + 0.95vw, 1.3rem);
+$font-size-h2: clamp(1rem, 0.9rem + 1.5vw, 2rem);
+$font-size-p: clamp(1rem, 0.75rem + 1vw, 1.5rem);
+$font-size-a: clamp(1rem, 0.75rem + 1vw, 1.5rem);
+$font-size-li: clamp(0.8rem, 0.7rem + 0.95vw, 1.3rem);
 
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: $font-size-base;
+    
     color: $primary-color;
 }
 

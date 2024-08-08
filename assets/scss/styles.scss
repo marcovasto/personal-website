@@ -4,6 +4,10 @@
 @import "buttons";
 @import "navbar";
 
+// div {
+//     border: 1px solid red;
+// }
+
 // general
 
 html {
@@ -34,7 +38,7 @@ main {
     .img-responsive-lg {
         max-width: none;
         height: auto;
-        width: 600px;
+        width: 700px;
     }
 }
 
