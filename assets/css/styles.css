@@ -132,6 +132,10 @@ nav .nav-pills .nav-link.active {
   color: #FFFFFF;
 }
 
+div {
+  border: 1px solid red;
+}
+
 html {
   scroll-behavior: smooth;
 }
