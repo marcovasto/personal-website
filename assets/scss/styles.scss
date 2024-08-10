@@ -111,3 +111,19 @@ main {
 .contact-form {
     background-color: $alternative-background;
 }
+
+// tech skills
+
+.grid-columns {
+    display: grid;
+    gap: 1rem;
+
+    @media (min-width: 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    ul {
+        padding-left: 0;
+        list-style-type: none;
+    }
+}
