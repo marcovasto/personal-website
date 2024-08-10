@@ -1,14 +1,11 @@
 // colors
 $primary-color: #14243B;
-// $primary-color: #2C4569;
-$secondary-color: #46A148;
-// $secondary-color: #4CAF50;
-// $secondary-color: #E63946;
-$dark-color: #1C1C1E;
-$light-color: #FFFFFF;
-
+$secondary-color: #4CAF50;
 $base-background: #F4F4F9;
 $alternative-background: #E8EAF6;
+
+$dark-color: #1C1C1E;
+$light-color: #FFFFFF;
 
 // font-weight size
 $font-regular: 400;
@@ -22,9 +19,24 @@ $font-size-p: clamp(1rem, 0.75rem + 1vw, 1.5rem);
 $font-size-a: clamp(1rem, 0.75rem + 1vw, 1.5rem);
 $font-size-li: clamp(0.8rem, 0.7rem + 0.95vw, 1.3rem);
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    background-color: $base-background;
     font-family: 'Poppins', sans-serif;
     color: $primary-color;
+}
+
+.alternative-background {
+    background-color: $alternative-background;
 }
 
 h1 {
