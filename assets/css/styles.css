@@ -219,16 +219,26 @@ nav .nav-pills .nav-link.active {
     border-bottom-right-radius: 1.5rem;
   }
 }
-.grid-columns {
+.grid-main {
   display: grid;
   gap: 1rem;
 }
-@media (min-width: 1200px) {
-  .grid-columns {
-    grid-template-columns: repeat(3, 1fr);
+.grid-main .no-dot {
+  padding-left: 1rem;
+  list-style-type: none;
+}
+@media (min-width: 992px) {
+  .grid-main {
+    grid-template-columns: 60% 1fr;
   }
 }
-.grid-columns ul {
-  padding-left: 0;
-  list-style-type: none;
+
+@media (min-width: 992px) {
+  .custom-x-border {
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+  }
+  .custom-y-border {
+    border-right: 1px solid red;
+  }
 }
