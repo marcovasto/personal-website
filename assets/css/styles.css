@@ -62,7 +62,7 @@ span {
   font-size: clamp(1rem, 0.75rem + 1vw, 1.5rem);
 }
 
-.job-image {
+.card-home-image {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -89,6 +89,18 @@ span {
 
 .card-text {
   background-color: #FFFFFF;
+}
+
+.card-cv {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(20, 36, 59, 0.9);
+  background-blend-mode: multiply;
+  color: #FFFFFF;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  margin: 2rem 0;
 }
 
 .btn {
@@ -221,7 +233,7 @@ nav .nav-pills .nav-link.active {
 }
 .grid-main {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
 }
 .grid-main .no-dot {
   padding-left: 1rem;
@@ -229,16 +241,6 @@ nav .nav-pills .nav-link.active {
 }
 @media (min-width: 992px) {
   .grid-main {
-    grid-template-columns: 60% 1fr;
-  }
-}
-
-@media (min-width: 992px) {
-  .custom-x-border {
-    border-top: 1px solid red;
-    border-bottom: 1px solid red;
-  }
-  .custom-y-border {
-    border-right: 1px solid red;
+    grid-template-columns: 2fr 1fr;
   }
 }

@@ -1,4 +1,4 @@
-.job-image {
+.card-home-image {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,4 +26,20 @@
 
 .card-text {
     background-color: $light-color;
+}
+
+.card-cv {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-color: rgba($primary-color, 0.9);
+    background-blend-mode: multiply;
+
+    color: $light-color;
+
+    border-radius: 1.5rem;
+
+    padding: 1.5rem;
+    margin: 2rem 0;
 }

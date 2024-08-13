@@ -93,7 +93,7 @@
 
 .grid-main {
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
 
     .no-dot {
         padding-left: 1rem;
@@ -101,18 +101,18 @@
     }
 
     @media (min-width: 992px) {
-        grid-template-columns: 60% 1fr;
+        grid-template-columns: 2fr 1fr;
     }
 }
 
 // custom borders cv
 
-@media (min-width: 992px) {
-    .custom-x-border {
-        border-top: 1px solid red;
-        border-bottom: 1px solid red;
-    }
-    .custom-y-border {
-        border-right: 1px solid red;;
-    }
-}
+// @media (min-width: 992px) {
+//     .custom-x-border {
+//         border-top: 1px solid red;
+//         border-bottom: 1px solid red;
+//     }
+//     .custom-y-border {
+//         border-right: 1px solid red;;
+//     }
+// }
