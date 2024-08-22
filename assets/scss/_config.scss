@@ -57,10 +57,11 @@ h2 {
 p {
     font-weight: $font-regular;
     font-size: $font-size-p;
+    text-align: justify;
 }
 
 a {
-    font-weight: $font-medium;
+    font-weight: $font-regular;
     font-size: $font-size-a;
     text-decoration: none;
 
