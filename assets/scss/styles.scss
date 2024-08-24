@@ -59,9 +59,9 @@
     }
 }
 
-// work
+// work experience
 
-.grid-columns-card {
+.grid-card {
     display: grid;
     gap: 2rem;
 
@@ -70,7 +70,7 @@
     }
 }
 
-// portfolio
+// personal project
 
 .project {
     border-radius: 1.5rem;
@@ -96,25 +96,59 @@
     }
 }
 
-.grid-main {
+// grid curriculim vitae
+
+.grid-cv {
     display: grid;
     gap: 2rem;
 
-    ul {
-        i {
-            color: $secondary-color;
+    @media (min-width: 992px) {
+        grid-template-columns: 1.6fr 1fr;
+    }
+
+    .work-experience {
+        ul {
+            list-style: none;
+            padding-left: 0.5rem;
+        }
+    
+        ul li {
+            position: relative;
+            padding-left: 1.5em;
+    
+            &::before {
+                content: '—';
+                position: absolute;
+                left: 0;
+                color: $primary-color;
+                font-weight: $font-medium;
+            }
         }
     }
 
-    .no-dot {
-        padding-left: 1rem;
-        list-style-type: none;
-    }
-
-    @media (min-width: 992px) {
-        grid-template-columns: 2fr 1fr;
+    .tech-skills {
+        ul {
+            list-style: none;
+            padding-left: 0.5rem;
+        }
+    
+        ul li {
+            position: relative;
+            padding-left: 1.5em;
+    
+            &::before {
+                font-family: 'Font Awesome 6 Free';
+                content: '\f00c';
+                font-weight: 900;
+                position: absolute;
+                left: 0;
+                color: $primary-color;
+            }
+        }
     }
 }
+
+// contact form
 
 .contact-form {
     
