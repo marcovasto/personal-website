@@ -74,35 +74,6 @@ span {
   font-size: clamp(1rem, 0.75rem + 1vw, 1.5rem);
 }
 
-.card-home-image {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 150px;
-  background-color: rgba(20, 36, 59, 0.8);
-  background-blend-mode: multiply;
-}
-
-.image-1 {
-  background-image: url("../images/scientist.webp");
-}
-
-.image-2 {
-  background-image: url("../images/business.webp");
-}
-
-.image-3 {
-  background-image: url("../images/people-gym.webp");
-}
-
-.image-4 {
-  background-image: url("../images/food-supplements.webp");
-}
-
-.card-text {
-  background-color: #FFFFFF;
-}
-
 .btn {
   font-size: 1rem;
   font-weight: 400;
@@ -213,6 +184,35 @@ nav .nav-pills .nav-link.active {
   }
 }
 
+.card-home-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 150px;
+  background-color: rgba(20, 36, 59, 0.8);
+  background-blend-mode: multiply;
+}
+
+.image-1 {
+  background-image: url("../images/scientist.webp");
+}
+
+.image-2 {
+  background-image: url("../images/business.webp");
+}
+
+.image-3 {
+  background-image: url("../images/people-gym.webp");
+}
+
+.image-4 {
+  background-image: url("../images/food-supplements.webp");
+}
+
+.card-text {
+  background-color: #FFFFFF;
+}
+
 .project {
   border-radius: 1.5rem;
   max-height: 550px;
@@ -242,36 +242,30 @@ nav .nav-pills .nav-link.active {
     grid-template-columns: 1.6fr 1fr;
   }
 }
-.grid-cv .work-experience ul {
-  list-style: none;
-  padding-left: 0.5rem;
-}
-.grid-cv .work-experience ul li {
-  position: relative;
-  padding-left: 1.5em;
-}
-.grid-cv .work-experience ul li::before {
-  content: "—";
-  position: absolute;
-  left: 0;
-  color: #14243B;
-  font-weight: 500;
-}
+.grid-cv .work-experience ul,
 .grid-cv .tech-skills ul {
   list-style: none;
   padding-left: 0.5rem;
 }
+.grid-cv .work-experience ul li,
 .grid-cv .tech-skills ul li {
   position: relative;
   padding-left: 1.5em;
 }
+.grid-cv .work-experience ul li::before,
 .grid-cv .tech-skills ul li::before {
-  font-family: "Font Awesome 6 Free";
-  content: "\f00c";
-  font-weight: 900;
   position: absolute;
   left: 0;
   color: #14243B;
+}
+.grid-cv .work-experience ul li::before {
+  content: "—";
+  font-weight: 500;
+}
+.grid-cv .tech-skills ul li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
 }
 
 .contact-form .form-control {

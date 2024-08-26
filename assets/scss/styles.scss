@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 @import "config";
-@import "cards";
 @import "buttons";
 @import "navbar";
 
@@ -70,6 +69,36 @@
     }
 }
 
+.card-home-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 150px;
+
+    background-color: rgba($primary-color, 0.8);
+    background-blend-mode: multiply;
+}
+
+.image-1 {
+    background-image: url('../images/scientist.webp');
+}
+
+.image-2 {
+    background-image: url('../images/business.webp');
+}
+
+.image-3 {
+    background-image: url('../images/people-gym.webp');
+}
+
+.image-4 {
+    background-image: url('../images/food-supplements.webp');
+}
+
+.card-text {
+    background-color: $light-color;
+}
+
 // personal project
 
 .project {
@@ -106,45 +135,34 @@
         grid-template-columns: 1.6fr 1fr;
     }
 
-    .work-experience {
-        ul {
-            list-style: none;
-            padding-left: 0.5rem;
-        }
-    
-        ul li {
-            position: relative;
-            padding-left: 1.5em;
-    
-            &::before {
-                content: '—';
-                position: absolute;
-                left: 0;
-                color: $primary-color;
-                font-weight: $font-medium;
-            }
-        }
-    }
-
+    .work-experience,
     .tech-skills {
         ul {
             list-style: none;
             padding-left: 0.5rem;
-        }
-    
-        ul li {
-            position: relative;
-            padding-left: 1.5em;
-    
-            &::before {
-                font-family: 'Font Awesome 6 Free';
-                content: '\f00c';
-                font-weight: 900;
-                position: absolute;
-                left: 0;
-                color: $primary-color;
+
+            li {
+                position: relative;
+                padding-left: 1.5em;
+
+                &::before {
+                    position: absolute;
+                    left: 0;
+                    color: $primary-color;
+                }
             }
         }
+    }
+
+    .work-experience ul li::before {
+        content: '—';
+        font-weight: $font-medium;
+    }
+
+    .tech-skills ul li::before {
+        content: '\f00c';
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
     }
 }
 
