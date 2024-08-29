@@ -31,7 +31,7 @@
 
 .logos {
     overflow: hidden;
-    padding: 40px 0;
+    // padding: 40px 0;
     white-space: nowrap;
 
     svg {
@@ -49,7 +49,7 @@
     }
 
     @media (min-width: 992px) {
-        padding: 60px 0;
+        // padding: 60px 0;
 
         svg {
             height: 50px;
@@ -64,7 +64,7 @@
     display: grid;
     gap: 2rem;
 
-    @media (min-width: 1200px) {
+    @media (min-width: 992px) {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -75,7 +75,7 @@
     background-repeat: no-repeat;
     min-height: 150px;
 
-    background-color: rgba($primary-color, 0.8);
+    background-color: rgba($primary-color, 0.7);
     background-blend-mode: multiply;
 }
 
@@ -129,10 +129,10 @@
 
 .grid-cv {
     display: grid;
-    gap: 2rem;
 
-    @media (min-width: 992px) {
-        grid-template-columns: 1.6fr 1fr;
+    @media (min-width: 1200px) {
+        grid-template-columns: 1.5fr 1fr;
+        gap: 3rem;
     }
 
     .work-experience,
@@ -147,8 +147,7 @@
 
                 &::before {
                     position: absolute;
-                    left: 0;
-                    color: $primary-color;
+                    left: 0; 
                 }
             }
         }
@@ -157,12 +156,14 @@
     .work-experience ul li::before {
         content: '—';
         font-weight: $font-medium;
+        color: $primary-color;
     }
 
     .tech-skills ul li::before {
         content: '\f00c';
         font-family: 'Font Awesome 6 Free';
         font-weight: 900;
+        color: $secondary-color;
     }
 }
 

@@ -36,7 +36,7 @@ h2 {
 
 h3 {
   font-weight: 500;
-  font-size: clamp(1.125rem, 0.9rem + 1.25vw, 1.75rem);
+  font-size: clamp(1.125rem, 0.8rem + 1.2vw, 1.8rem);
 }
 
 h4 {
@@ -150,7 +150,6 @@ nav .nav-pills .nav-link.active {
 }
 .logos {
   overflow: hidden;
-  padding: 40px 0;
   white-space: nowrap;
 }
 .logos svg {
@@ -165,9 +164,6 @@ nav .nav-pills .nav-link.active {
   margin: 0 30px;
 }
 @media (min-width: 992px) {
-  .logos {
-    padding: 60px 0;
-  }
   .logos svg {
     height: 50px;
     margin: 0 40px;
@@ -178,7 +174,7 @@ nav .nav-pills .nav-link.active {
   display: grid;
   gap: 2rem;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .grid-card {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -189,7 +185,7 @@ nav .nav-pills .nav-link.active {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 150px;
-  background-color: rgba(20, 36, 59, 0.8);
+  background-color: rgba(20, 36, 59, 0.7);
   background-blend-mode: multiply;
 }
 
@@ -235,11 +231,11 @@ nav .nav-pills .nav-link.active {
 }
 .grid-cv {
   display: grid;
-  gap: 2rem;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .grid-cv {
-    grid-template-columns: 1.6fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
   }
 }
 .grid-cv .work-experience ul,
@@ -256,16 +252,17 @@ nav .nav-pills .nav-link.active {
 .grid-cv .tech-skills ul li::before {
   position: absolute;
   left: 0;
-  color: #14243B;
 }
 .grid-cv .work-experience ul li::before {
   content: "—";
   font-weight: 500;
+  color: #14243B;
 }
 .grid-cv .tech-skills ul li::before {
   content: "\f00c";
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
+  color: #4CAF50;
 }
 
 .contact-form .form-control {
